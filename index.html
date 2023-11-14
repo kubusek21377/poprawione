@@ -1,0 +1,133 @@
+
+
+<html>
+
+
+<head>
+
+<body bgcolor="pink">
+
+
+<title>
+włodarz
+</title>
+<font color="red"
+<center><head> Jakub Twardziszewski</head></center>
+
+
+<hr wialth = "570" size '4" color = "yellow"
+
+<body>
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-size: 20px;
+}
+</style>
+<body>
+
+<span style='font-size:100px;'>&#9924;</span>
+
+
+
+
+
+
+
+<center>
+    <h1 class="naglowek">LEGENDARBA PIOSENKA</h1>
+    
+    <video witdh="320" height="240" controls>
+        <source src="kotek.mp3">
+    </audio>
+    
+    </center>
+
+
+
+
+
+<center>
+    <h2 class="naglowek">Ulubiona piosenka</h2>
+<video witdh="320" height="240" controls>
+    <source src="wodza.mp4">
+</video>
+</center>
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+<header>
+    <h1>Aktualna data i godzina:</h1>
+    <p id="czas"></p>
+</header>
+
+<script>
+    // Funkcja do aktualizacji daty i godziny
+    function aktualizujDateIGodzine() {
+        var teraz = new Date(); // Pobierz aktualną datę i godzinę
+        var rok = teraz.getFullYear();
+        var miesiac = teraz.getMonth() + 1; // Dodaj 1, ponieważ miesiące są numerowane od 0
+        var dzien = teraz.getDate();
+        var godzina = teraz.getHours();
+        var minuta = teraz.getMinutes();
+        var sekunda = teraz.getSeconds();
+
+        // Formatuj datę i godzinę, dodając zero przed jednocyfrowymi liczbami
+        if (miesiac < 10) {
+            miesiac = "0" + miesiac;
+        }
+        if (dzien < 10) {
+            dzien = "0" + dzien;
+        }
+        if (godzina < 10) {
+            godzina = "0" + godzina;
+        }
+        if (minuta < 10) {
+            minuta = "0" + minuta;
+        }
+        if (sekunda < 10) {
+            sekunda = "0" + sekunda;
+        }
+
+        // Wyświetl datę i godzinę na stronie
+        document.getElementById("czas").textContent = rok + "-" + miesiac + "-" + dzien + " " + godzina + ":" + minuta + ":" + sekunda;
+    }
+
+    // Uruchom funkcję aktualizacji daty i godziny co sekundę
+    setInterval(aktualizujDateIGodzine, 1000);
+
+    // Wywołaj funkcję aktualizacji daty i godziny, aby wyświetlić je od razu
+    aktualizujDateIGodzine();
+</script>
